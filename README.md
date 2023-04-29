@@ -19,9 +19,9 @@ The function passed to `Iterate` must return `void` and take `T*` as its first a
 
 The function signatures that the `Iterate` function will accept are as follows:
 ```cpp
-void iterFunc(T* obj)
-void iterFunc(T* obj, size_t index) // the index of the object within the container
-void iterFunc(T* obj, size_t index, T* container) // pointer to the start of the container
+void iterFunc(T* obj);
+void iterFunc(T* obj, size_t index); // the index of the object within the container
+void iterFunc(T* obj, size_t index, T* container); // pointer to the start of the container
 ```
 With all of these signatures, any number of arguments can be appended to the end:
 ```cpp
