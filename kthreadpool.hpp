@@ -24,7 +24,7 @@ private:
 
 	std::vector<std::thread> Threads;
 
-	// number of currently active jobs in the pool, queued or running
+	// number of currently running jobs in the pool
 	std::atomic<size_t> ActiveJobCount { 0 };
 
 	// whether or not the pool is pending destroy
